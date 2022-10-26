@@ -6,6 +6,7 @@ import 'package:hotelio/config/app_route.dart';
 import 'package:hotelio/config/session.dart';
 import 'package:hotelio/page/home_page.dart';
 import 'package:hotelio/page/intro_page.dart';
+import 'package:hotelio/page/signin_page.dart';
 
 import 'config/app_color.dart';
 import 'firebase_options.dart';
@@ -49,11 +50,11 @@ class MyApp extends StatelessWidget {
         },
         AppRoute.intro: (context) => const IntroPage(),
         AppRoute.home: (context) => HomePage(),
-        AppRoute.signin: (context) => IntroPage(),
-        AppRoute.detail: (context) => IntroPage(),
-        AppRoute.checkout: (context) => IntroPage(),
+        AppRoute.signin: (context) => SigninPage(),
+        AppRoute.detail: (context) => const IntroPage(),
+        AppRoute.checkout: (context) => const IntroPage(),
         AppRoute.checkoutSuccess: (context) => const IntroPage(),
-        AppRoute.detailBooking: (context) => IntroPage(),
+        AppRoute.detailBooking: (context) => const IntroPage(),
       },
     );
   }
