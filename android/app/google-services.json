@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "160812335149",
+    "project_id": "course-hotelio-e18d3",
+    "storage_bucket": "course-hotelio-e18d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160812335149:android:312f16ecc1d3e1f5cd38a4",
+        "android_client_info": {
+          "package_name": "com.bwa.hotelio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160812335149-7ndmgb7ps8782rbe9ct0usv9q764ttd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfFmjXK1MUA6qUAP-QR8hd9iU2UohUMgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160812335149-7ndmgb7ps8782rbe9ct0usv9q764ttd2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "160812335149-eae3eba5ud32ng699o1c6p2jd0bv0l4d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hotelio"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160812335149:android:e4b4cd0ba7fbfdaacd38a4",
+        "android_client_info": {
+          "package_name": "com.hidayat.hotelio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160812335149-7ndmgb7ps8782rbe9ct0usv9q764ttd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfFmjXK1MUA6qUAP-QR8hd9iU2UohUMgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160812335149-7ndmgb7ps8782rbe9ct0usv9q764ttd2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "160812335149-eae3eba5ud32ng699o1c6p2jd0bv0l4d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hotelio"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
