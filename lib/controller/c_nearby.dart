@@ -17,17 +17,17 @@ class CNearby extends GetxController {
         'Village',
       ];
 
-  // final _listHotel = <Hotel>[].obs;
-  // List<Hotel> get listHotel => _listHotel.value;
+  final _listHotel = <Hotel>[].obs;
+  List<Hotel> get listHotel => _listHotel.value;
 
-  // getListHotel() async {
-  //   _listHotel.value = await HotelSource.getHotel();
-  //   update();
-  // }
+  getListHotel() async {
+    _listHotel.value = await HotelSource.getHotel();
+    update();
+  }
 
-  // @override
-  // void onInit() {
-  //   getListHotel();
-  //   super.onInit();
-  // }
+  @override
+  void onInit() {
+    getListHotel();
+    super.onInit();
+  }
 }
