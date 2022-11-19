@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:hotelio/config/app_asset.dart';
 import 'package:hotelio/config/app_color.dart';
 import 'package:hotelio/config/app_format.dart';
+import 'package:hotelio/config/app_route.dart';
 import 'package:hotelio/controller/c_user.dart';
 import 'package:hotelio/model/booking.dart';
 import 'package:hotelio/model/hotel.dart';
@@ -185,7 +186,15 @@ class DetailPage extends StatelessWidget {
               ],
             ),
           ),
-          ButtonCustom(label: 'Booking Now', onTap: () {})
+          ButtonCustom(
+              label: 'Booking Now',
+              onTap: () {
+                Navigator.pushNamed(
+                  context,
+                  AppRoute.checkout,
+                  arguments: hotel,
+                );
+              })
         ],
       ),
     );

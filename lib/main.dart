@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hotelio/config/app_route.dart';
 import 'package:hotelio/config/session.dart';
+import 'package:hotelio/page/checkout_page.dart';
+import 'package:hotelio/page/checkout_success_page.dart';
 import 'package:hotelio/page/datail_page.dart';
 import 'package:hotelio/page/home_page.dart';
 import 'package:hotelio/page/intro_page.dart';
@@ -53,8 +55,8 @@ class MyApp extends StatelessWidget {
         AppRoute.home: (context) => HomePage(),
         AppRoute.signin: (context) => SigninPage(),
         AppRoute.detail: (context) => DetailPage(),
-        AppRoute.checkout: (context) => const IntroPage(),
-        AppRoute.checkoutSuccess: (context) => const IntroPage(),
+        AppRoute.checkout: (context) => CheckoutPage(),
+        AppRoute.checkoutSuccess: (context) => const CheckoutSuccessPage(),
         AppRoute.detailBooking: (context) => const IntroPage(),
       },
     );
