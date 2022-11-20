@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:hotelio/config/app_color.dart';
 import 'package:hotelio/config/app_format.dart';
 import 'package:hotelio/config/app_route.dart';
+import 'package:hotelio/config/session.dart';
 import 'package:hotelio/controller/c_nearby.dart';
 
 import '../config/app_asset.dart';
@@ -256,13 +257,28 @@ class NearbyPage extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(50),
-            child: Image.asset(
-              AppAsset.profile,
-              width: 50,
-              height: 50,
-              fit: BoxFit.cover,
+          GestureDetector(
+            onTap: () {
+              showMenu(
+                  context: context,
+                  position: const RelativeRect.fromLTRB(16, 16, 0, 0),
+                  items: [
+                    const PopupMenuItem(value: 'logout', child: Text('logout'))
+                  ]).then((value) {
+                if (value == 'logout') {
+                  Session.clearUser();
+                  Navigator.pushNamed(context, AppRoute.signin);
+                }
+              });
+            },
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(50),
+              child: Image.asset(
+                AppAsset.profile,
+                width: 50,
+                height: 50,
+                fit: BoxFit.cover,
+              ),
             ),
           ),
           Column(
