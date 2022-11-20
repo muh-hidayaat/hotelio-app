@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:hotelio/config/app_color.dart';
 import 'package:hotelio/controller/c_home.dart';
 import 'package:hotelio/page/history_page.dart';
+import 'package:hotelio/widget/coming_soon.dart';
 import '../config/app_asset.dart';
 import 'nearby_page.dart';
 
@@ -22,11 +23,15 @@ class HomePage extends StatelessWidget {
     // ignore: prefer_const_constructors
     return Scaffold(
       body: Obx(() {
+        if (cHome.indexPage == 0) {
+          return NearbyPage();
+          // return const HistoryPage()
+        }
         if (cHome.indexPage == 1) {
           return const HistoryPage();
           // return const HistoryPage()
         }
-        return NearbyPage();
+        return const ComingSoon();
       }),
       bottomNavigationBar: Obx(() {
         return Material(
